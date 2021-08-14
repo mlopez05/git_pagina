@@ -1,0 +1,260 @@
+--------- Modelo de Caja
+
+div {
+	width: 50%;
+	background: #FF8000;
+	height: 120px;
+	margin: 20px 50px;
+	padding: 30px;
+	border: 10px solid #000;
+	display: inline-block;
+}
+
+---------- Fondos
+
+body {
+	background: url(../imagenes/ringlock.jpg);
+	background-repeat: no-repeat;
+	color: #F8F9F9;
+	background-attachment: fixed;
+	background-position: 300px 20px;
+}
+
+div {
+	background: url(../imagenes/ringlock.jpg);
+	height: 300px;
+	color: white;
+	background-no-repeat: no-repeat;
+}
+
+---------- Posicionamiento de cajas
+
+div {
+	width: 100px;
+	height: 100px;
+	background: #4A88F4;
+	color: #FFF;
+	font-size: 30px;
+	float: left;
+}
+
+.caja_padre {
+	width: 300px;
+	height: 300px;
+	background: #000;
+	position: relative;
+}
+
+.caja {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.caja {
+	position: fixed;
+	top: 100px;
+	bottom: 0;
+	right: 0;
+	left: 200px;
+} 
+
+.caja {
+	position: absolute;
+	top: 100px;
+	bottom: 0;
+	right: 0;
+	left: 200px;
+} 
+
+.caja {
+	position: static;
+	top: 100px;
+	bottom: 0;
+	right: 0;
+	left: 200px;
+} 
+
+---------- Texto y Tipografía
+
+h1 {
+	font-weight: normal;
+	text-align: center;
+	background: #CCC;
+}
+
+p {
+	font-family: Elephant;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: left;
+	line-height: 30px;
+	text-decoration: none;
+	text-transform: lowercase;
+	letter-spacing: normal;
+	word-spacing: 20px;
+	text-shadow: 1px 1px 3px #000;
+}
+
+----------- Enlaces
+
+a {
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10px 20px;
+	display: inline-block;
+	background: #3BA7E1;
+	color: #FFF;
+	padding: 10px 20px;
+	box-shadow: 0px 5px 0px #1D64A6;
+}
+
+a:hover {
+	box-shadow: 2px 2px 0px #000;
+	background: #CCC;
+}
+
+a:active {
+	box-shadow: none;
+}
+
+a:link {
+	color: #000;
+}
+
+a:visited {
+	color: #000;
+}
+
+a:hover {
+	text-decoration: underline;
+	background: #000;
+	color: #FFF;
+}
+
+a:active {
+	background: #FF8000;
+}
+
+------------- Imagenes
+
+div {
+	background: #000;
+	width: 100%;
+}
+
+img {
+	width: 400px;
+	height: auto;
+	margin: auto;
+	display: block;
+	border-radius: 50%;
+	/*box-shadow: 5px 5px 0px #FFF;*/
+	padding: 10px;
+	border: 2px solid #FFF;
+}
+
+------------- Listas
+
+/*
+ul {
+	list-style-type: square;
+	list-style-position: outside;
+}
+
+ol {
+	list-style-type: lower-latin;
+}*/
+
+.menu {
+	width: 100%;
+	background: #000;
+	list-style: none;
+	margin: 0;
+	padding: 0; 
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.menu li a {
+	padding: 10px 20px;
+	display: inline-block;
+	color: #FFF;
+}
+
+.menu li a:hover {
+	background: #CCC;
+	color: #000;
+}
+
+------------ Tablas
+
+table {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	width: 500px;
+}
+
+table td {
+	border: 1px solid #000;
+	padding: 20px;
+}
+
+table tr:hover {
+	background: #CCC;
+}
+
+table td:hover {
+	background: #000;
+	color: #FFF;
+}
+
+------------ Formularios
+
+form {
+	width: 20%;
+	border: 1px solid #CCC;
+	margin: 20px;
+	padding: 20px;
+}
+
+label {
+	font-size: 12px;
+	display: block;
+	width: 100%;
+}
+
+textarea {
+	resize: vertical;
+	max-height: 300px;
+	min-height: 100px;
+}
+
+input, textarea {
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #CCC;
+}
+
+input:focus, textarea:focus {
+	border: 1px solid #1668C4;
+}
+
+input[type="submit"]{
+	margin-bottom: 0;
+	background: #1668C4;
+	color: #FFF;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	background: #4A88F4;
+	cursor: pointer;
+}
+
